@@ -25,7 +25,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 
 			case 'primary':
 				buttonClassName =
-					'text-white bg-primary-600 hover:bg-primary-500 border-primary-600 dark:bg-primary-600 dark:text-white';
+					'text-white text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 border-indigo-600 dark:bg-indigo-600 dark:text-white';
 				break;
 
 			case 'outline-dark':
@@ -44,9 +44,8 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 					href={href}
 					rel={rel}
 					target={target}
-					className={`flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base ${buttonClassName} ${
-						secondaryIcon ? `md:justify-between` : `md:justify-center`
-					}  ${className}`}
+					className={`flex flex-row items-center justify-start gap-2 rounded-md border px-2 py-2 text-sm font-medium transition-colors duration-200 md:px-5 md:py-3 md:text-base ${buttonClassName} ${secondaryIcon ? `md:justify-between` : `md:justify-center`
+						}  ${className}`}
 				>
 					<div className="flex flex-row items-center gap-2">
 						{icon && <div className="shrink-0">{icon}</div>}
@@ -61,9 +60,8 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 			<button
 				ref={ref}
 				onClick={onClick}
-				className={`flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base ${buttonClassName} ${
-					secondaryIcon ? `md:justify-between` : `md:justify-center`
-				}  ${className}`}
+				className={`flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base ${buttonClassName} ${secondaryIcon ? `md:justify-between` : `md:justify-center`
+					}  ${className}`}
 			>
 				<div className="flex flex-row items-center gap-2">
 					{icon && <div className="shrink-0">{icon}</div>}

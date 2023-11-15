@@ -284,6 +284,12 @@ export type Draft = Node & {
   /** The author of the draft. */
   author: User;
   canonicalUrl?: Maybe<Scalars['String']['output']>;
+  /**
+   * Returns the user details of the co-authors of the post.
+   * Hashnode users can add up to 4 co-authors as collaborators to their posts.
+   * This functionality is limited to teams publication.
+   */
+  coAuthors?: Maybe<Array<User>>;
   /** Content of the draft in HTML and markdown */
   content?: Maybe<Content>;
   /** The cover image preference of the draft. Contains cover image URL and other details. */
@@ -818,6 +824,12 @@ export type Post = Node & {
   brief: Scalars['String']['output'];
   /** Canonical URL set by author in case of republished posts. */
   canonicalUrl?: Maybe<Scalars['String']['output']>;
+  /**
+   * Returns the user details of the co-authors of the post.
+   * Hashnode users can add up to 4 co-authors as collaborators to their posts.
+   * This functionality is limited to teams publication.
+   */
+  coAuthors?: Maybe<Array<User>>;
   /** List of users who have commented on the post. */
   commenters: PostCommenterConnection;
   /** A list of comments on the post. */
@@ -1460,8 +1472,6 @@ export type PublishPostInput = {
   coverImageOptions?: InputMaybe<CoverImageOptionsInput>;
   /** A flag to indicate if the comments are disabled for the post. */
   disableComments?: InputMaybe<Scalars['Boolean']['input']>;
-  /** The ID of the draft to be published. */
-  draftId: Scalars['ObjectId']['input'];
   /** Information about the meta tags added to the post, used for SEO purpose. */
   metaTags?: InputMaybe<MetaTagsInput>;
   /** The URL of the original article if the post is imported from an external source. */
@@ -1720,6 +1730,7 @@ export enum Scope {
   ImportSubscribersToPublication = 'import_subscribers_to_publication',
   PublicationAdmin = 'publication_admin',
   PublishDraft = 'publish_draft',
+  PublishPost = 'publish_post',
   RecommendPublications = 'recommend_publications',
   Signup = 'signup',
   UpdatePost = 'update_post',
