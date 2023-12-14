@@ -65,7 +65,7 @@ export default function Index({ publication, initialPosts, initialPageInfo }: Pr
 							publication.descriptionSEO || publication.title || `${publication.author.name}'s Blog`
 						}
 					/>
-					<meta property="twitter:card" content="summary_large_image"/>
+					<meta property="twitter:card" content="summary_large_image" />
 					<meta property="twitter:title" content={publication.displayTitle || publication.title || 'Hashnode Blog Starter Kit'} />
 					<meta property="twitter:description" content={publication.descriptionSEO || publication.title || `${publication.author.name}'s Blog`} />
 					<meta
@@ -88,7 +88,7 @@ export default function Index({ publication, initialPosts, initialPageInfo }: Pr
 					{posts.length > 0 && <MinimalPosts context="home" posts={posts} />}
 					{!loadedMore && pageInfo.hasNextPage && pageInfo.endCursor && (
 						<button className="bg-white" onClick={loadMore}>
-							Load more
+							Ver más
 						</button>
 					)}
 					{loadedMore && pageInfo.hasNextPage && pageInfo.endCursor && (

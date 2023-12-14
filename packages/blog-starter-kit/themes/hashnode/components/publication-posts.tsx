@@ -50,7 +50,7 @@ const PublicationPosts = (props: {
               className="w-full justify-center px-4 py-2 text-lg text-blue-600 dark:text-blue-500"
               onClick={fetchMore}
             >
-              <span>Load more</span>
+              <span>Ver más</span>
               <ChevronDownSVG className="ml-3 h-5 w-5 fill-current" />
             </Button>
           </div>
