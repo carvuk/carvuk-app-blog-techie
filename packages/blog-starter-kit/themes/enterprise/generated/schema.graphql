@@ -1844,11 +1844,17 @@ enum Scope {
   create_pro
   import_subscribers_to_publication
   publication_admin
+  publish_comment
   publish_draft
   publish_post
+  publish_reply
   recommend_publications
+  remove_comment
+  remove_reply
   signup
+  update_comment
   update_post
+  update_reply
   webhook_admin
   write_post
   write_series

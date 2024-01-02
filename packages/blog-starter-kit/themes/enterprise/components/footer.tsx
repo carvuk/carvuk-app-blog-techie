@@ -109,7 +109,7 @@ export function Footer() {
 					<div className="space-y-8 xl:col-span-1">
 						<img
 							className="h-10"
-							src={`carvuk-blanco.svg`}
+							src={`https://cdn.hashnode.com/res/hashnode/image/upload/v1702562929833/TwMYeopEr.png?w=320&h=80&auto=compress,format&format=webp`}
 							alt="Carvuk"
 						/>
 						<p className="text-gray-300 text-sm">
