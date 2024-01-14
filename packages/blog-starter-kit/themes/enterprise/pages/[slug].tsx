@@ -36,15 +36,15 @@ const PostComments = dynamic(() =>
 
 type Props =
 	| {
-			post: PostFullFragment;
-			page: null;
-			publication: PublicationFragment;
-	  }
+		post: PostFullFragment;
+		page: null;
+		publication: PublicationFragment;
+	}
 	| {
-			post: null;
-			page: StaticPageFragment;
-			publication: PublicationFragment;
-	  };
+		post: null;
+		page: StaticPageFragment;
+		publication: PublicationFragment;
+	};
 
 const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 	const highlightJsMonokaiTheme =
@@ -65,7 +65,6 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 		<>
 			<Head>
 				<title>{post.seo?.title || post.title}</title>
-				<link rel="canonical" href={post.url} />
 				<meta name="description" content={post.seo?.description || post.subtitle || post.brief} />
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:title" content={post.seo?.title || post.title} />
