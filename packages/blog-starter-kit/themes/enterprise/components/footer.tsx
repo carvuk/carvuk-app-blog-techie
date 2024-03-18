@@ -31,7 +31,7 @@ export function Footer() {
       },
     ],
     support: [
-      { name: 'Blog', href: `/blog` },
+      { name: 'Blog', href: `https://www.carvuk.com/blog` },
       { name: 'Permiso de circulación', href: `https://www.carvuk.com/consulta-permiso-circulacion` },
       { name: 'Precio permiso de circulación', href: `https://www.carvuk.com/precio-permiso-circulacion` },
       { name: 'Consulta patente', href: `https://www.carvuk.com/consulta-de-patente` },
