@@ -29,6 +29,7 @@ import {
 	PublicationFragment,
 } from '../generated/graphql';
 import { DEFAULT_COVER } from '../utils/const';
+import FloatingBanner from '../components/floating-banner';
 
 const SubscribeForm = dynamic(() =>
 	import('../components/subscribe-form').then((mod) => mod.SubscribeForm),
@@ -181,6 +182,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 						</>
 					)}
 				</Container>
+				<FloatingBanner />
 				<Footer />
 			</Layout>
 		</AppProvider>

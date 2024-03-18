@@ -28,6 +28,7 @@ import {
 	SlugPostsByPublicationQueryVariables,
 	StaticPageFragment,
 } from '../generated/graphql';
+import FloatingBanner from '../components/floating-banner';
 
 const Subscribe = dynamic(() => import('../components/subscribe').then((mod) => mod.Subscribe));
 const PostComments = dynamic(() =>
@@ -112,6 +113,7 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 			)}
 			{!post.preferences.disableComments && post.comments.totalDocuments > 0 && <PostComments />}
 			<Subscribe />
+			<FloatingBanner />
 		</>
 	);
 };

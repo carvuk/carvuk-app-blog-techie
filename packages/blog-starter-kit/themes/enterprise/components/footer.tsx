@@ -10,11 +10,11 @@ type Props = {
 export function Footer() {
   const navigation = {
     services: [
-      { name: 'Revisión Técnica', href: `/revision-tecnica` },
-      { name: 'Mantención', href: `/mantencion` },
-      { name: 'Desabolladura y pintura', href: `/desabolladura-y-pintura` },
-      { name: 'Carvuk Pro', href: `/carvuk-pro` },
-      { name: 'Seguro para tu auto', href: `/carvuk-pro` },
+      { name: 'Revisión Técnica', href: `https://www.carvuk.com/revision-tecnica` },
+      { name: 'Mantención', href: `https://www.carvuk.com/mantencion` },
+      { name: 'Desabolladura y pintura', href: `https://www.carvuk.com/desabolladura-y-pintura` },
+      { name: 'Carvuk Pro', href: `https://www.carvuk.com/carvuk-pro` },
+      { name: 'Seguro para tu auto', href: `https://www.carvuk.com/carvuk-pro` },
     ],
     company: [
       {
@@ -32,20 +32,20 @@ export function Footer() {
     ],
     support: [
       { name: 'Blog', href: `/blog` },
-      { name: 'Permiso de circulación', href: `/consulta-permiso-circulacion` },
-      { name: 'Precio permiso de circulación', href: `/precio-permiso-circulacion` },
-      { name: 'Consulta patente', href: `/consulta-de-patente` },
-      { name: 'Estado Revisión Técnica', href: `/consulta-revision-tecnica` },
-      { name: 'Examen de Conducir', href: `/examen-licencia-conducir` },
+      { name: 'Permiso de circulación', href: `https://www.carvuk.com/consulta-permiso-circulacion` },
+      { name: 'Precio permiso de circulación', href: `https://www.carvuk.com/precio-permiso-circulacion` },
+      { name: 'Consulta patente', href: `https://www.carvuk.com/consulta-de-patente` },
+      { name: 'Estado Revisión Técnica', href: `https://www.carvuk.com/consulta-revision-tecnica` },
+      { name: 'Examen de Conducir', href: `https://www.carvuk.com/examen-licencia-conducir` },
     ],
     legal: [
       {
         name: 'Términos y condiciones',
-        href: `/terminos-y-condiciones`,
+        href: `https://www.carvuk.com/terminos-y-condiciones`,
       },
       {
         name: 'Política de privacidad',
-        href: `/politica-de-privacidad`,
+        href: `https://www.carvuk.com/politica-de-privacidad`,
       },
     ],
     social: [
