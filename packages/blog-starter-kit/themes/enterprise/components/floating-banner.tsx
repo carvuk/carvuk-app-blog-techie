@@ -6,10 +6,10 @@ export default function FloatingBanner() {
       <div className='pointer-events-none fixed inset-x-0 bottom-0 z-10 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8'>
         <div className='pointer-events-auto flex items-center justify-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:justify-between sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5'>
           <p className='text-sm leading-6 text-white'>
-            <Link href='https://carvuk.soapcorredores.cl/home' legacyBehavior>
+            <Link href='https://carvuk.com/grabado-de-patente' legacyBehavior>
               <a className='text-center sm:flex sm:items-center'>
                 <strong className='text-center font-semibold'>
-                  Contrata tu SOAP AUTO 2024 a sólo $5.400
+                  ¡Evita multas! Graba tu patente acorde a la ley
                 </strong>
                 <svg
                   viewBox='0 0 2 2'
@@ -22,7 +22,7 @@ export default function FloatingBanner() {
                     r={1}
                   />
                 </svg>
-                <span className='block text-center underline'>Contrátalo aquí&nbsp;</span>
+                <span className='block text-center underline'>Agenda aquí&nbsp;</span>
                 <span
                   aria-hidden='true'
                   className='hidden sm:block'
