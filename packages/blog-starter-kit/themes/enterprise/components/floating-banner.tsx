@@ -6,7 +6,7 @@ export default function FloatingBanner() {
       <div className='pointer-events-none fixed inset-x-0 bottom-0 z-10 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8'>
         <div className='pointer-events-auto flex items-center justify-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:justify-between sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5'>
           <p className='text-sm leading-6 text-white'>
-            <Link href='https://carvuk.com/grabado-de-patente' legacyBehavior>
+            <Link href='https://www.carvuk.com/grabado-de-patente' legacyBehavior>
               <a className='text-center sm:flex sm:items-center'>
                 <strong className='text-center font-semibold'>
                   ¡Evita multas! Graba tu patente acorde a la ley
