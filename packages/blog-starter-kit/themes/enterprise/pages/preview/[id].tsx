@@ -44,7 +44,7 @@ export default function Post({ publication, post }: Props) {
 		</li>
 	));
 
-	const url = `https://www.carvuk.com/blog${publication.url.replace('https://carvuk.com/blog', '')}`;
+	const url = `https://www.carvuk.com/blog/${post.slug}`;
 
 
 	return (
