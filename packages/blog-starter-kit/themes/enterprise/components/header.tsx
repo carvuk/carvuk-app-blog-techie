@@ -26,6 +26,7 @@ export const Header = () => {
 		setIsSidebarVisible((prevVisibility) => !prevVisibility);
 	};
 
+	
 	const navList = (
 		<ul className="flex flex-row items-center gap-2 text-white">
 			{visibleItems.map((item) => (
