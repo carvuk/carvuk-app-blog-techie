@@ -62,12 +62,15 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 		</li>
 	));
 
+	const url = `https://www.carvuk.com/blog/${post.slug}`;
+
 	return (
 		<>
 			<Head>
 				<title>{post.seo?.title || post.title}</title>
 				<meta name="description" content={post.seo?.description || post.subtitle || post.brief} />
 				<meta property="twitter:card" content="summary_large_image" />
+				<link rel="canonical" href={url} />
 				<meta property="twitter:title" content={post.seo?.title || post.title} />
 				<meta
 					property="twitter:description"

@@ -88,6 +88,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					<title>
 						{publication.displayTitle || publication.title || 'Hashnode Blog Starter Kit'}
 					</title>
+					<link rel="canonical" href={'https://www.carvuk.com/blog'} />
 					<meta
 						name="description"
 						content={
