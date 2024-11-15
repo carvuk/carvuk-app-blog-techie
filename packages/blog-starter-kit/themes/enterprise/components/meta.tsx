@@ -21,6 +21,7 @@ export const Meta = () => {
 			{favicon ? <link rel="icon" type="image/png" href={favicon} /> : defaultFavicons}
 			<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
 			<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+			<link rel="canonical" href={`https://www.carvuk/blog${publication.url}`}/>
 			{process.env.NEXT_PUBLIC_VERCEL_ENV == "production" && <meta name="robots" content="INDEX,FOLLOW" />}
 			{process.env.NEXT_PUBLIC_VERCEL_ENV !== "production" && <meta name="robots" content="NOINDEX,FOLLOW" />}
 			{metaTags && parse(metaTags)}

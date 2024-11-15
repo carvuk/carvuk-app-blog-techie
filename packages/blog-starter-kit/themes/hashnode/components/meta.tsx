@@ -21,6 +21,7 @@ export const Meta = () => {
 		<Head>
 			{favicon ? <link rel="icon" type="image/png" href={favicon} /> : defaultFavicons}
 			<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+			<link rel="canonical" href={`https://www.carvuk/blog${publication.url}`} />
 			<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 			{metaTags && parse(metaTags)}
 		</Head>

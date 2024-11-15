@@ -68,7 +68,7 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 		<>
 			<Head>
 				<title>{post.seo?.title || post.title}</title>
-				<link rel="canonical" href={`https://www.carvuk.com${post.url}`} />
+				<link rel="canonical" href={`https://www.carvuk.com/blog${post.url}`} />
 				<meta name="description" content={post.seo?.description || post.subtitle || post.brief} />
 				<meta property="twitter:card" content="summary_large_image"/>
 				<meta property="twitter:title" content={post.seo?.title || post.title} />
