@@ -64,11 +64,13 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 		  })
 		: undefined;
 
+	const url = `https://www.carvuk.com/blog${publication.url.replace('https://carvuk.com/blog', '')}`;
+
 	return (
 		<>
 			<Head>
 				<title>{post.seo?.title || post.title}</title>
-				<link rel="canonical" href={`https://www.carvuk.com/blog${post.url}`} />
+				<link rel="canonical" href={url} />
 				<meta name="description" content={post.seo?.description || post.subtitle || post.brief} />
 				<meta property="twitter:card" content="summary_large_image"/>
 				<meta property="twitter:title" content={post.seo?.title || post.title} />

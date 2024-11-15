@@ -44,6 +44,9 @@ export default function Post({ publication, post }: Props) {
 		</li>
 	));
 
+	const url = `https://www.carvuk.com/blog${publication.url.replace('https://carvuk.com/blog', '')}`;
+
+
 	return (
 		<AppProvider publication={publication}>
 			<Layout>
@@ -52,7 +55,7 @@ export default function Post({ publication, post }: Props) {
 					<article className="flex flex-col items-start gap-10 pb-10">
 						<Head>
 							<title>{title}</title>
-							<link rel="canonical" href={`https://www.carvuk.com/blog${post.url}`} />
+							<link rel="canonical" href={url} />
 							<style dangerouslySetInnerHTML={{ __html: highlightJsMonokaiTheme }}></style>
 						</Head>
 						<PostHeader

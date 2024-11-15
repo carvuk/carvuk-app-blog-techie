@@ -69,6 +69,8 @@ export default function Post({ publication, draft }: Props) {
 
 	const allTags = draft.tags;
 	const toc = draft.features?.tableOfContents?.isEnabled ? draft.features?.tableOfContents?.items.flat() : [];
+	const url = `https://www.carvuk.com/blog${publication.url.replace('https://carvuk.com/blog', '')}`;
+
 	return (
 		<AppProvider publication={publication}>
 			<Layout>
@@ -86,7 +88,7 @@ export default function Post({ publication, draft }: Props) {
 				<Container>
 					<Head>
 						<title>{title}</title>
-						<link rel="canonical" href={`https://www.carvuk.com/blog${draft.canonicalUrl || ''}`} />
+						<link rel="canonical" href={url} />
 						<style dangerouslySetInnerHTML={{ __html: highlightJsMonokaiTheme }}></style>
 					</Head>
 					<main className="blog-post-detail-card pb-24">
