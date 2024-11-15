@@ -64,7 +64,7 @@ const Post = (publication: PublicationFragment, post: PostFullFragment) => {
 		  })
 		: undefined;
 
-	const url = `https://www.carvuk.com/blog${post.url.replace('https://carvuk.com/blog', '')}`;
+	const url = `https://www.carvuk.com/blog/${post.slug}`;
 
 	return (
 		<>

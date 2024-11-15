@@ -17,14 +17,12 @@ export const Meta = () => {
 		</>
 	);
 
-	const url = `https://www.carvuk.com/blog${publication.url.replace('https://carvuk.com/blog', '')}`;
 
 
 	return (
 		<Head>
 			{favicon ? <link rel="icon" type="image/png" href={favicon} /> : defaultFavicons}
 			<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-			<link rel="canonical" href={url} />
 			<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 			{metaTags && parse(metaTags)}
 		</Head>
