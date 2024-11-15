@@ -86,7 +86,7 @@ export default function Post({ publication, draft }: Props) {
 				<Container>
 					<Head>
 						<title>{title}</title>
-						<link rel="canonical" href={draft.canonicalUrl || ''} />
+						<link rel="canonical" href={`https://www.carvuk.com${draft.canonicalUrl || ''}`} />
 						<style dangerouslySetInnerHTML={{ __html: highlightJsMonokaiTheme }}></style>
 					</Head>
 					<main className="blog-post-detail-card pb-24">
